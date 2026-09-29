@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Sportolo.Controllers.EredmenyController",
+    "Method": "GetAllEredmeny",
+    "RelativePath": "eredmeny",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
