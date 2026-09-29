@@ -33,3 +33,4 @@ C:\Users\zoli\Desktop\2026_2027\2_14_F_Backend\WebApi\Sportolo\obj\Debug\net9.0\
 C:\Users\zoli\Desktop\2026_2027\2_14_F_Backend\WebApi\Sportolo\obj\Debug\net9.0\ref\Sportolo.dll
 C:\Users\zoli\Desktop\2026_2027\2_14_F_Backend\WebApi\Sportolo\bin\Debug\net9.0\Scalar.AspNetCore.dll
 C:\Users\zoli\Desktop\2026_2027\2_14_F_Backend\WebApi\Sportolo\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\zoli\Desktop\2026_2027\2_14_F_Backend\WebApi\Sportolo\obj\Debug\net9.0\Sportolo.sourcelink.json

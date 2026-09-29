@@ -43,5 +43,36 @@ namespace Sportolo.Controllers
 
             return new { message = "Sikeres lekérdezés.", result = list };
         }
+
+        [HttpGet("byId")]
+        public object GetEredmenyById([FromQuery] int id)
+        {
+            var connector = new MySqlConnection(ConnectionString);
+
+            connector.Open();
+
+            string sql = "SELECT * FROM eredmeny WHERE id = @id";
+
+            var cmd = new MySqlCommand(sql, connector);
+
+            cmd.Parameters.AddWithValue("@id", id);
+
+            var datareader = cmd.ExecuteReader();
+            datareader.Read();
+
+            var eredmeny = new Eredmeny
+            {
+                Id = datareader.GetInt32(0),
+                Competition = datareader.GetString(1),
+                Description = datareader.GetString(2),
+                ResultTime = datareader.GetDateTime(3),
+                UpdateTime = datareader.GetDateTime(4),
+                SportoloId = datareader.GetInt32(5)
+            };
+
+            connector.Close();
+
+            return new { message = "Sikeres lekérdezés.", result = eredmeny };
+        }
     }
 }
